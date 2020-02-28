@@ -29,3 +29,11 @@ function addTransactionDOM(transaction) {
 
     list.appendChild(item);
 }
+
+function init() {
+    list.innerHTML = '';
+
+    transactions.forEach(addTransactionDOM);
+}
+
+init();
